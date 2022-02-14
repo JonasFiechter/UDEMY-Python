@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: sans-serif;
+    font-size: 30pt;
+}
+
+.grid {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*                          columns  size (min    max)*/
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3px;
+}
+
+.grid div {
+    min-height: 200px;
+    margin: 0;
+    background: darkgreen;
+}
+
+.grid div:nth-child(5), .grid div:nth-child(6) {
+    background: darkolivegreen;
+    grid-column: span 2
+}
+
+@media (max-width: 768px) {
+    .grid div:nth-child(5), .grid div:nth-child(6) {
+        grid-column: span 1;
+    }
+}

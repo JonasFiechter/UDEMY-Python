@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* row PADRAO DA CONFIGURAÇÃO FLEX */
+    justify-content: space-between; /* flex-start PADRAO DA CONFIGURAÇÃO FLEX */
+    align-items: center; /* stretch PADRAO DA CONFIGURAÇÃO FLEX */
+    background: rgb(138, 82, 75);
+    height: 500px;
+}
+
+.flex-item {
+    width: 100%;
+    background: sandybrown;
+    margin: 5px;
+}
