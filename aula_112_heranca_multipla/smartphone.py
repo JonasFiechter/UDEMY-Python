@@ -1,4 +1,4 @@
-selffrom eletronico import *
+from eletronico import *
 from log import LogMixin
 
 
