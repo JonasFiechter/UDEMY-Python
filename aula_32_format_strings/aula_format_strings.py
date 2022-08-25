@@ -19,5 +19,6 @@ entry2 = int(input('Place another number: '))
 var_01 = entry1 * 500 + entry2
 var_02 = entry2 * 600 - var_01
 
-print(f'{var_01:0>10d}')
+print(f'{var_01:.2}')
+print(f'{var_02:0>10d}')
 print(f'{var_02:0>10d}')
