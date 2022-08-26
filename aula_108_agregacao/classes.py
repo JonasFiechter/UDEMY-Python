@@ -1,7 +1,7 @@
 class CarrinhoDeCompras:
     def __init__(self):
         self.produtos = []
-
+        
     def inserir_produto(self, produto):
         self.produtos.append(produto)
 

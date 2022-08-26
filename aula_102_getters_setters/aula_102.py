@@ -1,39 +1,39 @@
-class Produto:
-    def __init__(self, nome, preco):
-        self.nome = nome
-        self.preco = preco
+class Product:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
         self.tag = 'Cloathing'
 
-    def desconto(self, percentual):
-        self.preco = self.preco - (self.preco * (percentual / 100))
+    def discount(self, percentage):
+        self.price = self.price - (self.price * (percentage / 100))
 
     @property
-    def nome(self):
-        return self._nome
+    def name(self):
+        return self._name
 
-    @nome.setter
-    def nome(self, valor):
-        self._nome = valor.title()
+    @name.setter
+    def name(self, value):
+        self._name = value.title()
 
     # getter
     @property
-    def preco(self):
-        return self._preco
+    def price(self):
+        return self._price
 
     # setter
-    @preco.setter
-    def preco(self, valor):
-        if isinstance(valor, str):
-            valor = float(valor.replace('R$', ''))
+    @price.setter
+    def price(self, value):
+        if isinstance(value, str):
+            value = float(value.replace('R$', ''))
 
-        self._preco = valor
+        self._price = value
 
-p1 = Produto('camiseta', 50)
-p1.desconto(15)
-print(p1.nome, f'R${p1.preco:.2f}')
+p1 = Product('shirt', 50)
+p1.discount(15)
+print(p1.name, f'R${p1.price:.2f}')
 
-p2 = Produto('CANECA', 'R$15')
-p2.desconto(10)
-print(f'{p2.preco:.2f} {p2.nome}')
+p2 = Product('mug', 'R$15')
+p2.discount(10)
+print(f'{p2.price:.2f} {p2.name}')
 
 print(p1.tag)
