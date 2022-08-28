@@ -7,10 +7,10 @@ class Eletronico:
         if self._ligado:
             return
         self._ligado = True
-        print(f'{self._nome} está ligando...')
+        print(f'{self._nome} turning on...')
 
     def desligar(self):
         if not self._ligado:
             return
         self._ligado = False
-        print(f'{self._nome} está desligando...')
+        print(f'{self._nome} turning off...')

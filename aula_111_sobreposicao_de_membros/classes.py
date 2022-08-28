@@ -26,4 +26,3 @@ class ClienteVIP(Cliente):
     def falar(self):
         Pessoa.falar(self)
         Cliente.falar(self)
-        print('Teste print')

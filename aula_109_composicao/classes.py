@@ -4,7 +4,7 @@ class Cliente:
         self.idade = idade
         self.enderecos = []
 
-    def inserere_endereco(self, cidade, estado):
+    def insere_endereco(self, cidade, estado):
         self.enderecos.append(Endereco(cidade, estado))
 
     def lista_enderecos(self):

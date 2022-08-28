@@ -1,7 +1,7 @@
 from classes import Cliente, Endereco
 
 cliente1 = Cliente('John', 32)
-cliente1.inserere_endereco('Washington', 'BC')
+cliente1.insere_endereco('Washington', 'BC')
 cliente1.lista_enderecos()
 del cliente1
 
